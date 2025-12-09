@@ -116,7 +116,7 @@ section{
 #home{
     height: 100vh;
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/imagens/background.techES2.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("background.techES2.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,4 +260,5 @@ footer ul li a:hover{
     font-size: 20px;
     margin-left: 10px;
     font-weight: bold;
+
 }
