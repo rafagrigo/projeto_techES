@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background: #222;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(146, 146, 221);
+}
+
+/* ---------- Botão de Tema ---------- */
+.theme-btn {
+    background: #444;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #666;
+}
+
+.theme-btn i {
+    font-size: 20px;
+}
+
+.light-mode {
+    background: #f4f4f4;
+    color: #222;
+}
+
+.light-mode nav {
+    background: #ddd;
+}
+
+.light-mode nav .logo,
+.light-mode nav ul li a {
+    color: #222;
+}
+.light-mode nav ul li a:hover{
+    color: #f39c12;
+}
+.light-mode footer {
+    background: #ddd;
+    color: #222;
+}
+.light-mode #sobre{
+    background: #f4f4f4;
+    color: #222;
+}
+.light-mode #servicos{
+    background: #f4f4f4;
+    color: #222;
+}
+.light-mode #midias{
+    background: #f4f4f4;
+    color: #222;
+}
+.light-mode #contato{
+    background: #f4f4f4;
+    color: #222;
+}
+.light-mode footer ul li a{
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.light-mode footer ul li a:hover{
+    color: #444;
+}
+section{
+    width: 100%;
+    padding: 100px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#home{
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/imagens/background.techES2.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#home h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#home p{
+    font-size: 20px;
+}
+#sobre,
+#servicos,
+#midias,
+#contato{
+    background-color: #061429;
+    color: white;
+}
+#sobre h2,
+#servicos h2,
+#midias h2,
+#contato h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+#sobre p{
+    font-size: 25px;
+}
+#servicos ul{
+    font-size: 20px;
+    list-style: none;
+    line-height: 2;
+}
+#midias .galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+#midias .galeria img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+#midias .galeria img:hover{
+    transform: scale(1.05);
+}
+#midias video{
+    margin-bottom: 70px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+form label{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+form input, 
+form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button{
+    background: #f39c12;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+form button:hover{
+    background: #222;
+}
+
+footer{
+    background: #222;
+    color: white;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+footer p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+footer ul li a{
+    color: #05c7f7;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+footer ul li a:hover{
+    color: rgb(146, 146, 221);
+}
+
+.like-container {
+    margin-top: 20px;
+}
+
+#likeBtn {
+    background: #444;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#likeBtn:hover {
+    background: #666;
+}
+
+#likeBtn i {
+    font-size: 20px;
+}
+
+#likeCount {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
